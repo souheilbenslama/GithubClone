@@ -1,0 +1,32 @@
+body {
+    color: #797979;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px !important;
+    margin:  0px !important;
+    font-size: 13px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+  }
+  p {
+    margin-top: 0px;
+    margin-bottom: 1rem
+  }
+  
+  
+  h3 {
+    line-height: 30px;
+    font-size: 21px
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #333131;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+  }
+  
