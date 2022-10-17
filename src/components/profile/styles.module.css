@@ -13,7 +13,7 @@
 border: none !important;
 background-color: white !important;
 box-shadow: none !important;
-border-bottom: 5px solid #fbc02d !important;
+/*border-bottom: 5px solid #fbc02d !important;*/
 color:  #89817f !important ;
 }
 .navButton:hover{
@@ -26,7 +26,7 @@ color:  #89817f !important ;
     margin-right: auto;
 }
 .repositoryLink{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .repositoryLink>h2:hover{
     color: rgb(60, 60, 173);
@@ -36,6 +36,14 @@ color:  #89817f !important ;
 .fullWidth{
     width: 100%;
 }
+
+.fullheight{
+    height: 5cm;
+}
+
+.listtre{
+    max-height: 65vh !important ; overflow: auto !important} 
+
 .center{
     display: flex;
     align-items: center;

@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar.component'
 import MenuAppBar from './components/navbar.component';
-import ProfileRepositoriesComponent from './components/profile/repositories.components';
+import ProfileRepositoriesComponent from './components/profile/reposList.components';
 import Profile from './components/profile/profile.components';
 import NavbarComponent from './components/navbar.component';
 function App() {

@@ -15,9 +15,13 @@ class GithubService{
     }
     // Return a list of repositories for the specified user
     getRepositories () {
-        return this.octokit.request('GET /users/{username}/repos', {
+        var repos = this.octokit.request('GET /users/{username}/repos', {
             username: process.env.REACT_APP_GITHUB_USERNAME||''
         });
+
+    
+
+        return repos ;
     }
 }
 export default new GithubService();
