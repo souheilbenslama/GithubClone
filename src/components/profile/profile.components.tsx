@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import React from "react";
 import { ReactDOM } from "react";
 import ProfileInfoComponent from "./profile-info.components";
@@ -9,7 +9,9 @@ class Profile extends React.Component{
 
     render(): React.ReactNode {
         return(
-
+            <div>
+                
+            <Container fixed>
             <Grid container spacing={2}>
                  <Grid item xs={12} md={4} lg={4} xl={4} sm={12}>
                  <ProfileInfoComponent/>
@@ -21,6 +23,9 @@ class Profile extends React.Component{
 
 
             </Grid>
+
+            </Container>
+        </div>
 
         ) 
     }
