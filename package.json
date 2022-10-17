@@ -48,5 +48,5 @@
   },
   "devDependencies": {
     "typescript": "^4.8.4"
-  }
+  },"engines": {"node": "14.17.5"}
 }
