@@ -13,7 +13,11 @@ import {
 
 const ReposItemList = (props: { repository: any; index: React.Key | null | undefined; })=>{
    let repository: any = props.repository;
-    // format a date to 'MMM Do YY' exp: Sep 13th 22
+   /**
+    * format a date to 'MMM Do YY' exp: Sep 13th 22
+    * @param {any} it represnets the update  date of the repository
+     */ 
+
     const formatDate = (date: any) => {
         return moment(date).format("MMM Do YY");
     }

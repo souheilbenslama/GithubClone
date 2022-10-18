@@ -1,3 +1,9 @@
+/**
+ * this file containe the repositories list component which is a scrollable liste of user repositories
+ * @package {@mui/material}
+ * 
+ */
+
 import React, {useEffect, useState} from "react";
 import {
     Box,
@@ -7,7 +13,6 @@ import {
     List,
 } from "@mui/material";
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
-import moment from "moment";
 import GithubService from "../../services/github.service";
 import styles from './styles.module.css';
 import ReposBar from "./reposBar.components";
@@ -17,6 +22,10 @@ import ReposItemList from "./reposItemList.components";
 const ProfileRepositoriesComponent = () => {
     const [repositories, setRepositories] = useState<any[]>([]);
     const [searchValue, setSearchValue]: [string, (search: string) => void] = useState("");
+
+    /**
+     * @param event  the event that occured in the search bar
+     */
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setSearchValue(event.target.value)
@@ -45,20 +54,18 @@ const ProfileRepositoriesComponent = () => {
             </Box>
 
             <div className={styles.fullWidth }>
-            
               <List  className={styles.listtre } >
                     {repositories.length ? repositories.map((repository, index) => {
                                 if (searchValue === "" || repository.name.toLowerCase().startsWith(searchValue.toLowerCase())) {
                                     return (
                                     <ReposItemList repository={repository} index={index} ></ReposItemList>
-                                    
                                     )
                                 }else {
                                     return (<></>)
                                 }
-                    
                             } 
-                        ) :
+                        ) 
+                    :
                         <div>
                             <CircularProgress color="inherit" className={styles.m10}/>
                         </div>

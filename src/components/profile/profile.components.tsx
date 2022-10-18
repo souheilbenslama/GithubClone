@@ -1,9 +1,18 @@
+/**
+ * a profile class that represent the profile component that is formed by user info component and repositories component
+ * @extends {React.Component}
+ * about its dependencies
+ * @package {@mui/material }
+ * @package {react}
+ */
+
 import { Container, Grid } from "@mui/material";
 import React from "react";
-import { ReactDOM } from "react";
-import ProfileInfoComponent from "./UserInfo.components";
+import UserInfoComponent from "./UserInfo.components";
 import ProfileRepositoriesComponent from './reposList.components';
-import styles from './styles.module.css';
+
+
+
 class Profile extends React.Component{
 
 
@@ -14,7 +23,7 @@ class Profile extends React.Component{
             <Container fixed>
             <Grid  container spacing={2} >
                  <Grid  item xs={12} md={4} lg={4} xl={4} sm={12}>
-                 <ProfileInfoComponent/>
+                 <UserInfoComponent/>
                 </Grid>
 
 

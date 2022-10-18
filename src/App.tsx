@@ -6,10 +6,12 @@ import MenuAppBar from './components/navbar.component';
 import ProfileRepositoriesComponent from './components/profile/reposList.components';
 import Profile from './components/profile/profile.components';
 import NavbarComponent from './components/navbar.component';
+
 function App() {
   return (
-    <div >
-     <NavbarComponent/>
+    
+    <div id='3' >
+     <NavbarComponent  />
    <Profile></Profile>
       
     </div>

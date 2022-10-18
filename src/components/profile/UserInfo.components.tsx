@@ -14,12 +14,18 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
-const ProfileInfoComponent = () => {
+const UserInfoComponent = () => {
     const [user, setUser] = useState<any>()
-    useEffect(() => {
-        GithubService.getUser().then((response: any) => {
+    
+     function fetchUserData() {
+        const response = GithubService.getUser().then((response: any) => {
             setUser(response.data);
         });
+      return
+      }
+
+    useEffect(() => {
+        fetchUserData()
     }, [user]);
 
 
@@ -49,7 +55,7 @@ const ProfileInfoComponent = () => {
                        <Typography className={styles.infobox} variant="body2"  >
                                         <div className={styles.center}>
                                          <EmailOutlinedIcon/>
-                                        <span className={styles.ml5}>{user.email} </span>
+                                        <span id='email' className={styles.ml5}>{user.email} </span>
                                         </div> 
                                     
                       
@@ -96,4 +102,4 @@ const ProfileInfoComponent = () => {
 
     );
 }
-export default ProfileInfoComponent;
+export default UserInfoComponent;

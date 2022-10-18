@@ -1,3 +1,7 @@
+/**
+ * this file containes the nav bar component 
+ */
+
 import React  from "react";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import {Stack, AppBar,Toolbar,IconButton,Typography} from "@mui/material";
