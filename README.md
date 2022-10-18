@@ -5,6 +5,11 @@ This project is a github public page clone that shows  a specific account user i
 
 you can access the app by click this link [GtihubReopsitories](https://visionary-fox-474731.netlify.app/)
 
+## interface
+
+![This is the interface](./public/interface.png)
+
+
 ## on how to run it
 
 In order to run this app you need to start by cloning it in your machine
@@ -36,8 +41,4 @@ $ npm test
 
 ## feedback 
 This project was an excellent opportunity to refresh my knowledge of react and to familiarize myself with [materialUI](https://mui.com/) components . 
-
-## interface
-
-![This is the interface](./public/interface.png)
 
