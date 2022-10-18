@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Github repositories React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## description 
+This project is a github public page clone that shows  a specific account user info with a detailed list of its repositories . this app interface  follows good user experience principle and ises  the official [GitHub API](https://docs.github.com/en/rest) to fetch repositories per user.
+
+## on how to run it
+
+In order to run this app you need to start by cloning it in your machine
+``` console
+$ git clone https://github.com/chaimabg/GitHub-Repositories.git your_new_project
+$ cd your_new_project
+```
+then you need to create a `.env` file with the following values:
+```
+REACT_APP_GITHUB_TOKEN= github_token
+REACT_APP_GITHUB_USERNAME= user_name
+```
+## how to run the test suite
+## Future improvements
+## feedback 
 
 ## Available Scripts
 
