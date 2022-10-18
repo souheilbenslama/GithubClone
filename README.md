@@ -1,7 +1,9 @@
 # Github repositories React App
 
 ## description 
-This project is a github public page clone that shows  a specific account user info with a detailed list of its repositories . this app interface  follows good user experience principle and ises  the official [GitHub API](https://docs.github.com/en/rest) to fetch repositories per user.
+This project is a github public page clone that shows  a specific account user info with a detailed list of its repositories. This app interface  follows good user experience principle and ises  the official [GitHub API](https://docs.github.com/en/rest) to fetch repositories per user.
+
+you can access the app by click this link [GtihubReopsitories](https://visionary-fox-474731.netlify.app/)
 
 ## on how to run it
 
