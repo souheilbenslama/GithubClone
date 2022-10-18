@@ -8,6 +8,10 @@ import {Avatar, CircularProgress} from "@mui/material";
 import PeopleOutlineOutlinedIcon from '@mui/icons-material/PeopleOutlineOutlined';
 import GithubService from "../../services/github.service";
 import styles from './styles.module.css';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 const ProfileInfoComponent = () => {
@@ -21,7 +25,7 @@ const ProfileInfoComponent = () => {
 
     return (
         <Card className={styles.card}>
-            {user ? <>
+            { user ? <>
                     <CardContent>
                         <Avatar
                             alt="Remy Sharp"
@@ -41,16 +45,48 @@ const ProfileInfoComponent = () => {
                         <Typography variant="body2">
                             {user.bio}
                         </Typography>
-                    </CardContent><CardActions>
-                    <Button size="small" variant="outlined" href={user.html_url} fullWidth>
-                        Consult Profile
-                    </Button>
 
-                </CardActions>
-                    <div className={styles.center}>
-                        <PeopleOutlineOutlinedIcon/>
-                        <span className={styles.ml5}>{user.followers} followers, {user.following} following</span>
-                    </div>
+                       <Typography className={styles.infobox} variant="body2"  >
+                                        <div className={styles.center}>
+                                         <EmailOutlinedIcon/>
+                                        <span className={styles.ml5}>{user.email} </span>
+                                        </div> 
+                                    
+                      
+
+                    
+                                        <div className={styles.center}>
+                                            <LinkedInIcon/>
+                                            <span className={styles.ml5}>{user.blog} </span>
+                                        </div>
+                    
+                    
+                                        <div className={styles.center}>
+                                            <BusinessOutlinedIcon/>
+                                            <span className={styles.ml5}>{user.company} </span>
+                                        </div>
+                    
+                    
+                                        <div className={styles.center}>
+                                            <LocationOnOutlinedIcon/>
+                                            <span className={styles.ml5}>{user.location} </span>
+                                        </div>
+                                  
+                        
+                                        <div className={styles.center}>
+                                            <PeopleOutlineOutlinedIcon/>
+                                            <span className={styles.ml5}>{user.followers} followers, {user.following} following</span>
+                                        </div>
+                        
+
+                        </Typography>
+                    </CardContent>
+
+                    <CardActions>
+                        <Button size="small" variant="outlined" href={user.html_url} fullWidth>
+                            Consult Profile
+                        </Button>
+                    </CardActions>
                 </> :
                 <div>
                     <CircularProgress color="inherit" className={styles.m10}/>

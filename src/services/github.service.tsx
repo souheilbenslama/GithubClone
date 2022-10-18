@@ -9,9 +9,11 @@ class GithubService{
     }
     // Return available information about the GitHub account of the user defined by his username
      getUser (){
-        return this.octokit.request('GET /users/{username}', {
+        var user =  this.octokit.request('GET /users/{username}', {
             username: process.env.REACT_APP_GITHUB_USERNAME||''
         });
+        console.log(user);
+        return user;
     }
     // Return a list of repositories for the specified user
     getRepositories () {

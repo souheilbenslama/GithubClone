@@ -5,6 +5,11 @@
     margin-top: 15px;
     border-bottom: 1px solid #ebeae6;
 }
+
+
+.infobox {
+    margin-top: 15px !important;
+}
 .card{
     box-shadow: none !important;
     border: none !important;
@@ -13,8 +18,16 @@
 border: none !important;
 background-color: white !important;
 box-shadow: none !important;
-/*border-bottom: 5px solid #fbc02d !important;*/
+
 color:  #89817f !important ;
+}
+
+.selectedNavButton{
+    border: none !important;
+    background-color: white !important;
+    box-shadow: none !important;
+    color:  #89817f !important ;   
+    border-bottom: 3px solid #61a0f7 !important;
 }
 .navButton:hover{
     background-color: rgb(246,245,245)!important;

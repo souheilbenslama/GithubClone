@@ -42,7 +42,7 @@ const ReposBar = () => {
                     Overview 
                 </Button>
                 <Button
-                    className={styles.navButton} 
+                    className={styles.selectedNavButton } 
                     variant="contained"
                     startIcon={<BookOutlinedIcon/>} 
                 >
